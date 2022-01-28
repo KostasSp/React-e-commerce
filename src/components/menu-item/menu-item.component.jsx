@@ -18,4 +18,6 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   </div>
 );
 
+//pass MenuItem through the withRouter HOC, so that it gets access to match, location and history props
+//(whenever it renders), which are part of the object passed to the component from <Route /> (82)
 export default withRouter(MenuItem);
