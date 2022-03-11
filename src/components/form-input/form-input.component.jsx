@@ -4,7 +4,7 @@ import "./form-input.styles.scss";
 const FormInput = ({ handleChange, label, ...otherProps }) => {
   return (
     <div className="group">
-      {console.log(otherProps ? "yes" : "No")}
+      {console.log("rendered form-input")}
       <input className="form-input" onChange={handleChange} {...otherProps} />
       {label ? (
         <label

@@ -7,6 +7,7 @@ const CollectionPreview = ({ title, items }) => {
     <div className="collection-preview">
       <div className="title">{title.toUpperCase()}</div>
       <div className="preview">
+        {console.log(items)}
         {items
           .filter((item, idx) => idx < 4)
           .map(({ id, ...otherItemProps }) => (
